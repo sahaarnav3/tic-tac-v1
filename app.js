@@ -28,6 +28,9 @@ function checkGameStatus(location){
         cellDivs[0].classList.add('wincol');
         cellDivs[1].classList.add('wincol');
         cellDivs[2].classList.add('wincol');
+        if (winner == 0){
+            winner = 2;
+        }
         statusDiv.innerHTML = `${winner} Has WON..!!`;
     }
     else if (value[0] == value[4] && value[4] == value[8] && value[0] >= 0){
@@ -36,6 +39,9 @@ function checkGameStatus(location){
         cellDivs[0].classList.add('wincol');
         cellDivs[4].classList.add('wincol');
         cellDivs[8].classList.add('wincol');
+        if (winner == 0){
+            winner = 2;
+        }
         statusDiv.innerHTML = `${winner} Has WON..!!`;
     }
     else if (value[0] == value[3] && value[3] == value[6] && value[0] >= 0){
@@ -44,6 +50,9 @@ function checkGameStatus(location){
         cellDivs[0].classList.add('wincol');
         cellDivs[3].classList.add('wincol');
         cellDivs[6].classList.add('wincol');
+        if (winner == 0){
+            winner = 2;
+        }
         statusDiv.innerHTML = `${winner} Has WON..!!`;
     }
     else if (value[6] == value[7] && value[7] == value[8] && value[6] >= 0){
@@ -52,6 +61,9 @@ function checkGameStatus(location){
         cellDivs[6].classList.add('wincol');
         cellDivs[7].classList.add('wincol');
         cellDivs[8].classList.add('wincol');
+        if (winner == 0){
+            winner = 2;
+        }
         statusDiv.innerHTML = `${winner} Has WON..!!`;
     }
     else if (value[6] == value[4] && value[4] == value[2] && value[6] >= 0){
@@ -60,6 +72,9 @@ function checkGameStatus(location){
         cellDivs[6].classList.add('wincol');
         cellDivs[4].classList.add('wincol');
         cellDivs[2].classList.add('wincol');
+        if (winner == 0){
+            winner = 2;
+        }
         statusDiv.innerHTML = `${winner} Has WON..!!`;
     }
     else if (value[3] == value[4] && value[4] == value[5] && value[3] >= 0){
@@ -68,6 +83,9 @@ function checkGameStatus(location){
         cellDivs[3].classList.add('wincol');
         cellDivs[4].classList.add('wincol');
         cellDivs[5].classList.add('wincol');
+        if (winner == 0){
+            winner = 2;
+        }
         statusDiv.innerHTML = `${winner} Has WON..!!`;
     }
     else if (value[1] == value[4] && value[4] == value[7] && value[1] >= 0){
@@ -76,6 +94,9 @@ function checkGameStatus(location){
         cellDivs[1].classList.add('wincol');
         cellDivs[4].classList.add('wincol');
         cellDivs[7].classList.add('wincol');
+        if (winner == 0){
+            winner = 2;
+        }
         statusDiv.innerHTML = `${winner} Has WON..!!`;
     }
     else if (value[2] == value[5] && value[5] == value[8] && value[2] >= 0){
@@ -84,6 +105,9 @@ function checkGameStatus(location){
         cellDivs[2].classList.add('wincol');
         cellDivs[5].classList.add('wincol');
         cellDivs[8].classList.add('wincol');
+        if (winner == 0){
+            winner = 2;
+        }
         statusDiv.innerHTML = `${winner} Has WON..!!`;
     }
     else if (value[0] != -1 && value[1] != -1 && value[2] != -1 && value[3] != -1 && value[4] != -1 && value[5] != -1 && value[6] != -1 && value[7] != -1 && value[8] != -1 ){
